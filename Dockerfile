@@ -12,4 +12,4 @@ RUN java -Djarmode=layertools -jar cicdDocker-0.0.1-SNAPSHOT.jar extract
 FROM openjdk:11-jre-slim
 WORKDIR application
 
-ENTRYPOINT ["java", "org.springframework.boot.loader.JarLauncher"]
+ENTRYPOINT ["java", "/jar", "org.springframework.boot.loader.JarLauncher"]
